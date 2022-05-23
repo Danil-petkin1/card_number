@@ -191,7 +191,7 @@ vector<int> detectDigits(Mat gray, vector<Mat> digitROI)
 int main(int argc, char* argv[])
 {
     string file = argv[0];
-    file.resize(file.size() - 26);
+    file.resize(file.size() - 27);
     for (std::string::size_type n = 0; (n = file.find("\\", n)) != std::string::npos; ++n)
     {
         file.replace(n, 1, 1, '/');
